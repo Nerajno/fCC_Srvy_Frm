@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
 
-    <!--Links for CSS-->
-    <!-- New FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+  <!--Links for CSS-->
+  <!-- New FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
 
 
 </head>
-<body>
-<!-- Nav-bar -->
-<!-- Content body  -->
-<main>
-<h1 id="title">Survey Form</h1>
 
-<form class="survey-form" action="index.html" method="post" id="">
-    <div class="rowTab">
+<body>
+  <!-- Nav-bar -->
+  <!-- Content body  -->
+  <main>
+    <h1 id="title">Survey Form</h1>
+    <div class="outer-form">
+      <form id="survey-form" action="index.html" method="post" id="">
+        <h3>Let's See What We Can Do</h3>
+        <h3> To Help You</h3>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">*Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">*Email Address: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Iamperson@somewhere.com" required>
+          </div>
+        </div>
+        <div class="rowTab">
         <div class="labels">
-          <label id="name-label" for="name">* Name: </label>
+          <label id="name-label" for="name">*GitHub Name: </label>
         </div>
         <div class="rightTab">
-          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          <input type="text" name="name" id="ghuname" class="input-field" placeholder="Enter your Github name" required>
         </div>
       </div>
-</form>
-</main>
+      <div class="rowTab">
+      <div class="labels">
+        <p id="description"> What type of learner best describes you ?</p>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+     <option disabled value>Pick a player </option>
+     <option  value="determined">Determined</option>
+     <option value="genius">Genius</option>
+     <option value="potential">Getting There</option>
+     <option value="Yoda">Jedi Master </option>
+     <option value="other">Other</option>
+   </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="selfdscrptn">* How do you like to learn :</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style:none;">
+          <li class="radio"><label><input name="radio-buttons" value="1" type="radio">Alone</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >In a class</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >On a space Station</label></li>
+        </ul>
+      </div>
+    </div>
+      </form>
+    </div>
+  </main>
 
-<!-- footer -->
-<footer>
+  <!-- footer -->
+  <footer>
 
-</footer>
+  </footer>
 </body>
 <!-- Javascript and Jquery links   -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>"
 <script src="main.js"></script>
 </body>
+
 </html>
