@@ -1,6 +1,6 @@
-## fCC_Srvy_Frm
+# fCC_Srvy_Frm
 
-#freeCodecamp's Survey Form
+##freeCodecamp's Survey Form
 
 ## Getting Started
 This is a freeCodecamp's Responsive Web Design Certification prerequiste. Here is a live version :  
