@@ -1,5 +1,4 @@
 
-
 body{
   background-image: url(https://farm2.staticflickr.com/1862/42693755160_f37e60282a_h.jpg);
   height: 100vh;
@@ -21,6 +20,7 @@ body{
 h3{
   text-align: center;
   margin-top: 0px;
+  font-size: 1.5em;
 }
 
 .outer-form{
@@ -35,16 +35,15 @@ h3{
   color: white;
 }
 
-
 .rowTab{
   text-align: center;
   margin-left: auto;
   margin-right:auto
-  width:auto;
+  width:auto 0;
 }
 
 .labels {
-  display: inline-block;
+  display: inline-flex;
   text-align: right;
   width: 40%;
   padding: 5px;
@@ -98,6 +97,9 @@ ul{
 }
 
 button{
-  align-items: center;
-  width: auto;
+  background-color: steelblue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
