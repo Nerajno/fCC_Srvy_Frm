@@ -47,10 +47,13 @@ h3{
   text-align: right;
   width: 40%;
   padding: 5px;
-  vertical-align: middle;
+  padding-left:20%;
+  vertical-align: right;
   margin-top: 10px;
   border-color: black;
   border-style: solid 1.5px;
+
+
 }
 
 .rightTab {
@@ -58,6 +61,7 @@ h3{
   text-align: left;
   width: 48%;
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 .input-field{
@@ -88,6 +92,14 @@ h3{
   position:relative;
 }
 
+#name-label{
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+
+}
+
 ul{
   padding-left: 0px;
 }
@@ -102,4 +114,11 @@ button{
   justify-content: center;
   text-align: center;
   margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .labels{
+    width: auto;
+    background-color: green;
+  }
 }
