@@ -13,7 +13,7 @@ Nerando Johnson [@nerajno on twitter]
 ## Acknowledgments
 * I am still here because of my community of freeCodecamp ATL, @CodeNewbie and many more...
 
-##Bugs
+## Bugs
 - [ ] Still not mobile fully mobile compatible.
 - [ ] Need to move all the labels to the center.
 - [ ] More stuff IDK...
