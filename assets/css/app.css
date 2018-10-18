@@ -25,7 +25,7 @@ h3{
 
 .outer-form{
   background-color: grey;
-  width: 80%;
+  width: 70vw;
   height: auto;
   margin-left: auto;
   margin-right:auto;
@@ -44,14 +44,12 @@ h3{
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  padding:1%;
 }
 
 .labels {
   /* display: flex; */
   text-align: left;
   width: 40%;
-  padding: 5px;
   padding-left:20%;
   vertical-align: right;
   margin-top: 10px;
@@ -97,7 +95,7 @@ h3{
   position:relative;
 }
 
-#name-label, #email-label, #number-label, #description, #selfdscrptn{
+#name-label, #email-label, #number-label, #description, #selfdscrptn, #comments{
   display: block;
   position: relative;
   float: right;
@@ -128,7 +126,27 @@ font-weight: 700;
 
 
 @media screen and (max-width: 480px) {
-  .labels{
-    width: auto;
+
+  .survey-form{
+    margin: auto;
+    text-align: center;
+  }
+
+  .labels, .rightTab{
+    width: 65vh;
+    text-align: left;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+    }
+  
+  #name-label, #email-label, #number-label, #description, #selfdscrptn, #comments{
+  float: left;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  }
+  .rightTab{
+    margin-left: 2%;
   }
 }
